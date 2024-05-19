@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <!-- Backspace symbol -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="whole-cont">
+        <div class="calcu-container">
+            <div class="lcd-container">
+                <input id="display" class="lcd" readonly placeholder="0">
+            </div>
+            <div class="keys-container">
+                <button onclick="clearDisplay()" class="key misc">AC</button>
+                <button onclick="deleteLast()" class="key misc">DEL</button>
+                <button onclick="appendToDisplay('%')" class="key misc">%</button>
+                <button onclick="appendToDisplay('/')" class="key operation">/</button>
+                <button onclick="appendToDisplay('7')" class="key number">7</button>
+                <button onclick="appendToDisplay('8')" class="key number">8</button>
+                <button onclick="appendToDisplay('9')" class="key number">9</button>
+                <button onclick="appendToDisplay('*')" class="key operation">*</button>
+                <button onclick="appendToDisplay('4')" class="key number">4</button>
+                <button onclick="appendToDisplay('5')" class="key number">5</button>
+                <button onclick="appendToDisplay('6')" class="key number">6</button>
+                <button onclick="appendToDisplay('-')" class="key operation">-</button>
+                <button onclick="appendToDisplay('1')" class="key number">1</button>
+                <button onclick="appendToDisplay('2')" class="key number">2</button>
+                <button onclick="appendToDisplay('3')" class="key number">3</button>
+                <button onclick="appendToDisplay('+')" id="add" class="key operation">+</button>
+                <button onclick="appendToDisplay('0')" class="key number">0</button>
+                <button onclick="appendToDisplay('.')" class="key number">.</button>
+                <button onclick="calculate()" class="key operation">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="solve-script.js"></script>
+</body>
+</html>
